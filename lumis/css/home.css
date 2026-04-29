@@ -1,0 +1,165 @@
+/* ── HOME ── */
+
+.home-hero {
+  min-height: calc(100vh - var(--nav-h));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-left {
+  display: flex; flex-direction: column; justify-content: space-between;
+  padding: 7vw 4vw 5vw 5vw;
+  border-right: 1px solid var(--border);
+}
+
+.hero-headline { margin: 2rem 0 3rem; }
+.hero-headline .display-xl { display: block; }
+.hero-headline .display-xl.italic-line { font-style: italic; color: var(--gold); }
+
+.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+.hero-right {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.hero-visual {
+  background: var(--bg3);
+  position: relative;
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 50vh;
+}
+
+.hero-visual-svg { width: 65%; opacity: 0.9; }
+
+/* rotating botanical badge */
+.hero-badge {
+  position: absolute; top: 2rem; right: 2rem;
+  width: 90px; height: 90px;
+  animation: spin 18s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.hero-meta {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+}
+.hero-meta-item {
+  padding: 1.75rem 2rem;
+  border-right: 1px solid var(--border);
+}
+.hero-meta-item:last-child { border-right: none; }
+.hero-meta-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 300; color: var(--ink);
+  display: block; line-height: 1;
+}
+.hero-meta-num span { color: var(--gold); }
+.hero-meta-label { display: none; }
+
+/* ── INTRO STRIP ── */
+.intro-strip {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6vw;
+  align-items: center;
+  padding: 7vw 5vw;
+  border-bottom: 1px solid var(--border);
+}
+.intro-label-col { display: flex; flex-direction: column; gap: 1.5rem; }
+.intro-text-col { max-width: 560px; }
+
+/* ── PRODUCT GRID ── */
+.products-section { padding: 7vw 5vw; }
+
+.products-header {
+  display: flex; justify-content: space-between; align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+}
+
+.product-card {
+  background: var(--bg);
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+  transition: background 0.35s var(--ease);
+}
+.product-card:hover { background: var(--bg3); }
+
+.product-card-line {
+  width: 28px; height: 1px;
+  background: var(--gold);
+  margin-bottom: 1.75rem;
+  transition: width 0.4s var(--ease);
+}
+.product-card:hover .product-card-line { width: 52px; }
+
+.product-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem; font-weight: 300; line-height: 1;
+  color: var(--border);
+  position: absolute; top: 1.5rem; right: 2rem;
+  pointer-events: none;
+  transition: color 0.35s;
+}
+.product-card:hover .product-num { color: var(--gold-faint); }
+
+.product-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 400; letter-spacing: 0.06em;
+  color: var(--ink); display: block; margin-bottom: 0.75rem;
+}
+.product-desc { font-size: 0.85rem; font-weight: 300; color: var(--ink3); line-height: 1.8; }
+.product-arrow {
+  display: inline-block; margin-top: 1.75rem;
+  font-size: 0.62rem; font-weight: 500; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold);
+  opacity: 0; transform: translateX(-8px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.product-card:hover .product-arrow { opacity: 1; transform: translateX(0); }
+
+/* ── RITUAL BANNER ── */
+.ritual-banner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.ritual-text {
+  padding: 7vw 5vw;
+  display: flex; flex-direction: column; justify-content: center;
+  border-right: 1px solid var(--border);
+}
+.ritual-image {
+  background: var(--bg3);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 400px;
+}
+
+/* ── RESPONSIVE HOME ── */
+@media (max-width: 900px) {
+  .home-hero { grid-template-columns: 1fr; }
+  .hero-left { border-right: none; border-bottom: 1px solid var(--border); padding: 4rem 5vw; }
+  .hero-right { grid-template-rows: auto auto; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
+  .ritual-banner { grid-template-columns: 1fr; }
+  .ritual-text { border-right: none; border-bottom: 1px solid var(--border); }
+  .intro-strip { grid-template-columns: 1fr; gap: 2rem; }
+  .products-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+}
+@media (max-width: 580px) {
+  .products-grid { grid-template-columns: 1fr; }
+  .hero-meta { grid-template-columns: 1fr 1fr; }
+}

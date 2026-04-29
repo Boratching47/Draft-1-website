@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Lumis — Skincare Refined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/global.css"/>
+<link rel="stylesheet" href="css/home.css"/>
+<style>
+.nav-logo-img { height:72px;width:auto;display:block;transition:opacity 0.2s; }
+.nav-logo-img:hover { opacity:0.8; }
+[data-theme="light"] .nav-logo-img { filter:brightness(0) invert(0); }
+.hero-visual-img { width:100%;height:100%;object-fit:cover;object-position:center top;display:block; }
+.ritual-full-img { width:100%;height:100%;object-fit:cover;object-position:center;display:block;min-height:400px; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html"><img src="logo.svg" alt="Lumis" class="nav-logo-img"/></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Treatments</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" aria-label="Toggle theme"></button>
+    <a href="contact.html" class="nav-book">Book a Call</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="about.html" onclick="closeMenu()">About</a>
+  <a href="services.html" onclick="closeMenu()">Treatments</a>
+  <a href="testimonials.html" onclick="closeMenu()">Testimonials</a>
+  <a href="contact.html" onclick="closeMenu()">Contact</a>
+</div>
+<div class="page">
+  <!-- HERO -->
+  <section class="home-hero">
+    <div class="hero-left">
+      <div>
+        <span class="eyebrow">Precision Skincare — Est. 2017</span>
+        <div class="hero-headline">
+          <span class="display-xl">The</span>
+          <span class="display-xl italic-line">ritual</span>
+          <span class="display-xl">of skin.</span>
+        </div>
+        <p class="body-lg" style="max-width:400px;margin-bottom:3rem;">Science-led formulations and expert treatments designed for lasting luminosity. Skincare as it should be — thoughtful, precise, transformative.</p>
+      </div>
+      <div class="hero-btns">
+        <a href="services.html" class="btn btn-gold">Explore Treatments</a>
+        <a href="about.html" class="btn btn-outline">Our Philosophy</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-visual">
+        <svg class="hero-badge" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+          <defs><path id="bp" d="M45,45 m-32,0 a32,32 0 1,1 64,0 a32,32 0 1,1-64,0"/></defs>
+          <text font-family="'Jost',sans-serif" font-size="8.5" font-weight="400" letter-spacing="3.5" fill="#C9A96E" opacity="0.7"><textPath href="#bp">LUMIS · SKINCARE · WELLNESS · GLOW ·</textPath></text>
+          <circle cx="45" cy="45" r="4" fill="#C9A96E" opacity="0.5"/>
+        </svg>
+        <img src="img-hero.svg" alt="Skincare treatment" class="hero-visual-img"/>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-num"><span data-count="8">0</span><span class="gold">+</span></span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-num"><span data-count="2400">0</span><span class="gold">+</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- INTRO -->
+  <section class="intro-strip reveal">
+    <div class="intro-label-col">
+      <span class="eyebrow">The Lumis Difference</span>
+      <span class="rule-gold"></span>
+    </div>
+    <div class="intro-text-col">
+      <h2 class="display-sm italic" style="margin-bottom:1.5rem;">Skincare rooted in science, delivered with care.</h2>
+      <p class="body-lg" style="margin-bottom:1.5rem;">We don't believe in one-size treatments. Every client who enters Lumis receives a thorough skin analysis and a personalised protocol designed around their unique biology, lifestyle, and goals.</p>
+      <p class="body-md" style="margin-bottom:2.5rem;">Our practitioners combine clinical expertise with the finest ingredients — marine extracts, peptide complexes, and botanical actives — to deliver results that endure.</p>
+      <a href="about.html" class="btn btn-outline">Our Story →</a>
+    </div>
+  </section>
+  <!-- TREATMENTS -->
+  <section class="products-section">
+    <div class="products-header reveal">
+      <div>
+        <span class="eyebrow">Signature Treatments</span>
+        <h2 class="display-md" style="margin-top:0.5rem;">Crafted for your skin.</h2>
+      </div>
+      <a href="services.html" class="btn btn-ghost">All Treatments</a>
+    </div>
+    <div class="products-grid">
+      <a href="services.html" class="product-card reveal">
+        <div class="product-card-line"></div>
+        <span class="product-num">01</span>
+        <span class="product-name">Lumis Signature Facial</span>
+        <p class="product-desc">Our cornerstone treatment. A 90-minute deep ritual combining enzyme exfoliation, peptide infusion, and gua sha massage.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.08s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">02</span>
+        <span class="product-name">Resurfacing Peel</span>
+        <p class="product-desc">Medical-grade acids blended precisely to your Fitzpatrick type. Controlled exfoliation that reveals a brighter, more even complexion.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.16s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">03</span>
+        <span class="product-name">LED Photorejuvenation</span>
+        <p class="product-desc">NASA-derived light therapy targeting collagen stimulation, inflammation, and cellular renewal. Zero downtime, visible results.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.24s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">04</span>
+        <span class="product-name">Microneedling</span>
+        <p class="product-desc">Precision micro-channels to activate the skin's own repair cascade. Targets fine lines, scarring, and textural irregularities.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.32s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">05</span>
+        <span class="product-name">Vitamin Infusion</span>
+        <p class="product-desc">Concentrated serums driven through the dermis via iontophoresis. Instant luminosity with cumulative structural benefit.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="contact.html" class="product-card reveal" style="transition-delay:0.40s;background:var(--bg3);border:1px solid var(--border2);">
+        <div class="product-card-line" style="background:var(--gold2);"></div>
+        <span class="product-num" style="color:var(--gold-faint);">✦</span>
+        <span class="product-name" style="color:var(--gold);">Book a Consultation</span>
+        <p class="product-desc">Not sure where to start? Your first visit includes a complimentary skin analysis and personalised treatment plan.</p>
+        <span class="product-arrow" style="opacity:1;transform:none;color:var(--gold);">Reserve your time →</span>
+      </a>
+    </div>
+  </section>
+  <!-- RITUAL BANNER -->
+  <section class="ritual-banner">
+    <div class="ritual-text reveal">
+      <span class="eyebrow" style="margin-bottom:1.5rem;display:block;">The Lumis Ritual</span>
+      <h2 class="display-md" style="margin-bottom:2rem;">Every visit begins<br>with <em class="italic gold">listening</em>.</h2>
+      <p class="body-lg" style="margin-bottom:1rem;">Before any treatment, we sit with you. We review your skin history, discuss your concerns, and build a protocol grounded in what your skin actually needs — not what's trending.</p>
+      <p class="body-md" style="margin-bottom:2.5rem;">This is why our results last. Because they're built on understanding.</p>
+      <a href="contact.html" class="btn btn-gold">Book Your Consultation</a>
+    </div>
+    <div class="ritual-image">
+      <img src="img-ritual.svg" alt="Skincare ritual" class="ritual-full-img"/>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Lumis</div>
+      <p class="footer-tagline">Precision skincare and restorative treatments designed for lasting, visible results.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Treatments</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Treatments</div>
+      <ul class="footer-links">
+        <li><a href="services.html">Signature Facial</a></li>
+        <li><a href="services.html">Resurfacing Peels</a></li>
+        <li><a href="services.html">LED Therapy</a></li>
+        <li><a href="services.html">Microneedling</a></li>
+        <li><a href="services.html">Vitamin Infusion</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Info</div>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Booking Terms</a></li>
+        <li><a href="#">Aftercare</a></li>
+        <li><a href="#">Gift Vouchers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Lumis Skincare. All rights reserved.</span>
+    <span class="footer-copy">Auckland, New Zealand</span>
+  </div>
+</footer>
+<script src="js/global.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
