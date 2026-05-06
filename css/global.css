@@ -18,7 +18,7 @@
   --border:       rgba(201,169,110,0.12);
   --border2:      rgba(201,169,110,0.22);
   --white:        #F0EAD8;
-  --nav-h:        72px;
+  --nav-h:        100px;
   --ease:         cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -99,14 +99,14 @@ nav {
 .nav-links a {
   display: block;
   padding: 0.45rem 1.1rem;
-  font-size: 0.78rem;
-  font-weight: 400;
+  font-size: 0.95rem;
+  font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink3);
   text-decoration: none;
   position: relative;
-  transition: color 0.25s, font-weight 0.01s;
+  transition: color 0.25s, font-weight 0.15s;
 }
 
 .nav-links a::after {

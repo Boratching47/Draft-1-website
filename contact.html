@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Lumis — Contact & Booking</title>
+<title>BMBD — Contact</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/global.css"/>
 <link rel="stylesheet" href="css/pages.css"/>
 <style>
-.nav-logo-img { height:72px;width:auto;display:block;transition:opacity 0.2s; }
+.nav-logo-img { height:90px;width:auto;display:block;transition:opacity 0.2s; }
 .nav-logo-img:hover { opacity:0.8; }
 [data-theme="light"] .nav-logo-img { filter:brightness(0) invert(0); }
 </style>
 </head>
 <body>
 <nav>
-  <a href="index.html"><img src="logo.svg" alt="Lumis" class="nav-logo-img"/></a>
+  <a href="index.html"><img src="logo.svg" alt="BMBD Consulting" class="nav-logo-img"/></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="testimonials.html">Our Clients</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Treatments</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -32,9 +32,9 @@
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="services.html" onclick="closeMenu()">Services</a>
+  <a href="testimonials.html" onclick="closeMenu()">Our Clients</a>
   <a href="about.html" onclick="closeMenu()">About</a>
-  <a href="services.html" onclick="closeMenu()">Treatments</a>
-  <a href="testimonials.html" onclick="closeMenu()">Testimonials</a>
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </div>
 <div class="page">
@@ -43,26 +43,17 @@
     <div class="contact-left">
       <div>
         <span class="eyebrow">Book a Call</span>
-        <h1 class="contact-headline">Your skin<br>deserves<br><em>attention</em>.</h1>
-        <p class="body-lg" style="max-width:360px;margin-bottom:3rem;">Every visit begins with listening. Fill in the form and we'll confirm your appointment within one business day.</p>
+        <h1 class="contact-headline">Book anytime,<br>no pressure.<br><em>Real solutions.</em></h1>
+        <p class="body-lg" style="max-width:360px;margin-bottom:3rem;">Fill in the form and we'll be in touch within one business day to confirm your call.</p>
       </div>
       <div>
-        <div class="contact-detail">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <span class="c-label">Studio Location</span>
-            <span class="c-value">14 Ponsonby Road, Ponsonby<br>Auckland 1011, New Zealand</span>
-          </div>
-        </div>
         <div class="contact-detail">
           <div class="contact-icon">
             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
           <div>
             <span class="c-label">Email</span>
-            <span class="c-value">hello@lumisskin.co.nz</span>
+            <span class="c-value">hello@bmbd.co.nz</span>
           </div>
         </div>
         <div class="contact-detail">
@@ -71,7 +62,7 @@
           </div>
           <div>
             <span class="c-label">Phone</span>
-            <span class="c-value">+64 9 360 5522</span>
+            <span class="c-value">Available on request</span>
           </div>
         </div>
         <div class="contact-detail">
@@ -79,15 +70,14 @@
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div>
-            <span class="c-label">Studio Hours</span>
-            <span class="c-value">Tuesday – Saturday<br>9:00 am – 6:00 pm NZST</span>
+            <span class="c-label">Availability</span>
+            <span class="c-value">Flexible — anytime,<br>no pressure</span>
           </div>
         </div>
         <div class="contact-social">
           <a href="#" class="social-btn">IG</a>
           <a href="#" class="social-btn">FB</a>
-          <a href="#" class="social-btn">PI</a>
-          <a href="#" class="social-btn">YT</a>
+          <a href="#" class="social-btn">LI</a>
         </div>
       </div>
     </div>
@@ -97,7 +87,7 @@
       <div class="form-2col">
         <div class="field">
           <label>First Name *</label>
-          <input type="text" placeholder="Sophia" data-required/>
+          <input type="text" placeholder="Sophie" data-required/>
         </div>
         <div class="field">
           <label>Last Name</label>
@@ -113,16 +103,12 @@
         <input type="tel" placeholder="+64 21 000 0000"/>
       </div>
       <div class="field">
-        <label>Treatment of Interest</label>
+        <label>Service of Interest</label>
         <select>
-          <option value="" disabled selected>Select a treatment…</option>
-          <option>Lumis Signature Facial</option>
-          <option>Resurfacing Peel</option>
-          <option>LED Photorejuvenation</option>
-          <option>Microneedling</option>
-          <option>Vitamin Infusion</option>
-          <option>Hydration Therapy</option>
-          <option>Bespoke Protocol</option>
+          <option value="" disabled selected>Select a service…</option>
+          <option>HR + People Management</option>
+          <option>Operations Optimisation</option>
+          <option>Strategy & Growth Planning</option>
           <option>Not sure — I need a consultation</option>
         </select>
       </div>
@@ -131,15 +117,15 @@
         <input type="text" placeholder="e.g. Thursday afternoons, or any morning"/>
       </div>
       <div class="field">
-        <label>Tell us about your skin *</label>
-        <textarea placeholder="Your primary concerns, any allergies or sensitivities, previous treatments…" data-required></textarea>
+        <label>Tell us about your business *</label>
+        <textarea placeholder="Your primary challenges, current team size, goals…" data-required></textarea>
       </div>
       <div class="form-bottom">
         <span class="form-note">We confirm all bookings within one business day.</span>
         <button class="btn btn-gold" onclick="handleSubmit()">Send Enquiry →</button>
       </div>
       <div class="success-msg" id="formSuccess">
-        ✦ Thank you — your enquiry has been received. We'll be in touch within one business day to confirm your visit.
+        ✦ Thank you — your enquiry has been received. We'll be in touch within one business day to confirm your call.
       </div>
     </div>
   </div>
