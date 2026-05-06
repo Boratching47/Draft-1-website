@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Lumis — Treatments</title>
+<title>BMBD — Services</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/global.css"/>
 <link rel="stylesheet" href="css/pages.css"/>
 <style>
-.nav-logo-img { height:72px;width:auto;display:block;transition:opacity 0.2s; }
+.nav-logo-img { height:90px;width:auto;display:block;transition:opacity 0.2s; }
 .nav-logo-img:hover { opacity:0.8; }
 [data-theme="light"] .nav-logo-img { filter:brightness(0) invert(0); }
 .services-ai-img { width:100%;height:100%;object-fit:cover;object-position:center;display:block;min-height:360px; }
@@ -17,12 +17,12 @@
 </head>
 <body>
 <nav>
-  <a href="index.html"><img src="logo.svg" alt="Lumis" class="nav-logo-img"/></a>
+  <a href="index.html"><img src="logo.svg" alt="BMBD Consulting" class="nav-logo-img"/></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="testimonials.html">Our Clients</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="services.html">Treatments</a></li>
-    <li><a href="testimonials.html">Testimonials</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -33,9 +33,9 @@
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" onclick="closeMenu()">Home</a>
+  <a href="services.html" onclick="closeMenu()">Services</a>
+  <a href="testimonials.html" onclick="closeMenu()">Our Clients</a>
   <a href="about.html" onclick="closeMenu()">About</a>
-  <a href="services.html" onclick="closeMenu()">Treatments</a>
-  <a href="testimonials.html" onclick="closeMenu()">Testimonials</a>
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </div>
 <div class="page">
@@ -43,113 +43,86 @@
   <section class="services-hero reveal">
     <div class="services-hero-row">
       <div>
-        <span class="eyebrow" style="margin-bottom:1rem;display:block;">Our Treatments</span>
-        <h1 class="display-lg">Precise care,<br><em class="italic gold">visible</em> results.</h1>
+        <span class="eyebrow" style="margin-bottom:1rem;display:block;">What We Offer</span>
+        <h1 class="display-lg">Tailored<br>solutions to streamline<br><em class="italic gold">your operations.</em></h1>
       </div>
-      <p class="body-lg" style="max-width:360px;">Every treatment at Lumis begins with understanding. No two skins are the same — and neither are two protocols.</p>
+      <p class="body-lg" style="max-width:360px;">Every engagement starts with understanding your business. No two businesses are the same — and neither are two solutions.</p>
     </div>
   </section>
 
-  <!-- AI IMAGE BANNER -->
+  <!-- IMAGE BANNER -->
   <div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-    <img src="img-services.svg" alt="Skincare treatments" class="services-ai-img"/>
+    <img src="img-services.svg" alt="Business consulting" class="services-ai-img"/>
   </div>
 
   <!-- SERVICES LIST -->
   <div class="services-list">
     <div class="service-row reveal">
       <div class="service-num">01</div>
-      <div class="service-name">Lumis Signature Facial</div>
-      <div class="service-desc">Our 90-minute cornerstone treatment. Enzyme exfoliation, peptide infusion, manual lymphatic drainage, and gua sha massage. Leaves the skin luminous, plumped, and deeply nourished.</div>
-      <div class="service-tag">90 min</div>
+      <div class="service-name">HR + People Management</div>
+      <div class="service-desc">Improving team performance, communication, and accountability through better structure, leadership support, and processes. We work alongside your team to build a culture that drives real results.</div>
+      <div class="service-tag">Ongoing</div>
     </div>
     <div class="service-row reveal" style="transition-delay:0.05s;">
       <div class="service-num">02</div>
-      <div class="service-name">Resurfacing Peel</div>
-      <div class="service-desc">Medical-grade AHA/BHA and TCA blends calibrated to your Fitzpatrick type. Targets uneven texture, pigmentation, and early lines.</div>
-      <div class="service-tag">45–60 min</div>
+      <div class="service-name">Operations Optimisation</div>
+      <div class="service-desc">Streamlining workflows, systems, and day-to-day processes to save time, reduce costs, and increase efficiency. We identify the bottlenecks and build practical systems that actually get used.</div>
+      <div class="service-tag">Project-based</div>
     </div>
     <div class="service-row reveal" style="transition-delay:0.1s;">
       <div class="service-num">03</div>
-      <div class="service-name">LED Photorejuvenation</div>
-      <div class="service-desc">NASA-derived red and near-infrared light stimulates fibroblast activity and ATP production. Clinically validated for collagen synthesis and cellular renewal. Zero downtime.</div>
-      <div class="service-tag">30–45 min</div>
-    </div>
-    <div class="service-row reveal" style="transition-delay:0.15s;">
-      <div class="service-num">04</div>
-      <div class="service-name">Microneedling</div>
-      <div class="service-desc">Controlled micro-injury activates the skin's innate repair cascade — stimulating collagen and elastin production. Effective for scarring, laxity, and textural irregularity.</div>
-      <div class="service-tag">60–75 min</div>
-    </div>
-    <div class="service-row reveal" style="transition-delay:0.2s;">
-      <div class="service-num">05</div>
-      <div class="service-name">Vitamin Infusion</div>
-      <div class="service-desc">Concentrated vitamin C, B3, and peptide complexes delivered trans-dermally via iontophoresis. Immediate brightness with cumulative structural benefit over a course of sessions.</div>
-      <div class="service-tag">45 min</div>
-    </div>
-    <div class="service-row reveal" style="transition-delay:0.25s;">
-      <div class="service-num">06</div>
-      <div class="service-name">Hydration Therapy</div>
-      <div class="service-desc">Hyaluronic acid in multiple molecular weights, locked in with occlusive botanical balms. For compromised, sensitised, or chronically dehydrated skin requiring immediate barrier support.</div>
-      <div class="service-tag">60 min</div>
-    </div>
-    <div class="service-row reveal" style="transition-delay:0.3s;">
-      <div class="service-num">07</div>
-      <div class="service-name">Bespoke Protocol</div>
-      <div class="service-desc">For clients requiring a fully individualised approach — combining modalities across multiple visits. Designed following a detailed skin analysis and lifestyle consultation.</div>
+      <div class="service-name">Strategy & Growth Planning</div>
+      <div class="service-desc">Identifying opportunities, setting clear goals, and building practical plans to scale the business sustainably. We turn ambition into actionable roadmaps grounded in your business reality.</div>
       <div class="service-tag">Ongoing</div>
     </div>
   </div>
 
-  <!-- CTA — process section REMOVED -->
+  <!-- CTA -->
   <section class="services-cta">
     <div class="reveal">
       <span class="eyebrow" style="margin-bottom:1rem;display:block;">Ready to Begin?</span>
-      <h2 class="display-sm italic gold" style="margin-bottom:0.5rem;">Your first visit includes a complimentary skin analysis.</h2>
-      <p class="body-md">No commitment required. Just an honest conversation about your skin.</p>
+      <h2 class="display-sm italic gold" style="margin-bottom:0.5rem;">Book a no-pressure strategy call.</h2>
+      <p class="body-md">No commitment required. Just an honest conversation about your business.</p>
     </div>
-    <a href="contact.html" class="btn btn-gold">Reserve Your Time →</a>
+    <a href="contact.html" class="btn btn-gold">Book a Call →</a>
   </section>
 </div>
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">Lumis</div>
-      <p class="footer-tagline">Precision skincare and restorative treatments designed for lasting, visible results.</p>
+      <div class="footer-brand">BMBD</div>
+      <p class="footer-tagline">Flexible business management support designed for real results and sustainable growth.</p>
     </div>
     <div>
       <div class="footer-col-title">Navigate</div>
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Our Clients</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Treatments</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">Treatments</div>
+      <div class="footer-col-title">Services</div>
       <ul class="footer-links">
-        <li><a href="services.html">Signature Facial</a></li>
-        <li><a href="services.html">Resurfacing Peels</a></li>
-        <li><a href="services.html">LED Therapy</a></li>
-        <li><a href="services.html">Microneedling</a></li>
-        <li><a href="services.html">Vitamin Infusion</a></li>
+        <li><a href="services.html">HR + People Management</a></li>
+        <li><a href="services.html">Operations Optimisation</a></li>
+        <li><a href="services.html">Strategy & Growth Planning</a></li>
       </ul>
     </div>
     <div>
       <div class="footer-col-title">Info</div>
       <ul class="footer-links">
         <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Booking Terms</a></li>
-        <li><a href="#">Aftercare</a></li>
-        <li><a href="#">Gift Vouchers</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">FAQs</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">© 2025 Lumis Skincare. All rights reserved.</span>
-    <span class="footer-copy">Auckland, New Zealand</span>
+    <span class="footer-copy">© 2025 BMBD Consulting. All rights reserved.</span>
+    <span class="footer-copy">New Zealand</span>
   </div>
 </footer>
 <script src="js/global.js"></script>
