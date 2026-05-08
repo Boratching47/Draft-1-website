@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400;1,9..40,700&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -12,11 +12,11 @@
   --ink2:         #C8BFA4;
   --ink3:         #7A7262;
   --ink4:         #3A3628;
-  --gold:         #C9A96E;
-  --gold2:        #E8C98A;
-  --gold-faint:   rgba(201,169,110,0.08);
-  --border:       rgba(201,169,110,0.12);
-  --border2:      rgba(201,169,110,0.22);
+  --gold:         #FFBD59;
+  --gold2:        #FFD07A;
+  --gold-faint:   rgba(255,189,89,0.08);
+  --border:       rgba(255,189,89,0.12);
+  --border2:      rgba(255,189,89,0.22);
   --white:        #F0EAD8;
   --nav-h:        100px;
   --ease:         cubic-bezier(0.4, 0, 0.2, 1);
@@ -31,18 +31,18 @@
   --ink2:         #3A3628;
   --ink3:         #7A7262;
   --ink4:         #B8B0A0;
-  --gold:         #9A7A3E;
-  --gold2:        #C4A050;
-  --gold-faint:   rgba(154,122,62,0.07);
-  --border:       rgba(154,122,62,0.15);
-  --border2:      rgba(154,122,62,0.30);
+  --gold:         #CC9900;
+  --gold2:        #E8A800;
+  --gold-faint:   rgba(204,153,0,0.07);
+  --border:       rgba(204,153,0,0.15);
+  --border2:      rgba(204,153,0,0.30);
   --white:        #FFFFFF;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Jost', system-ui, sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--ink);
   line-height: 1.65;
@@ -80,10 +80,10 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.65rem;
-  font-weight: 400;
-  letter-spacing: 0.22em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink);
   text-decoration: none;
@@ -150,9 +150,9 @@ nav {
 [data-theme="light"] .theme-btn::after { transform: translateX(20px); }
 
 .nav-book {
-  font-family: 'Jost', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 0.65rem;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--bg);
@@ -184,9 +184,9 @@ nav {
 }
 .mobile-menu.open { display: flex; }
 .mobile-menu a {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem; font-weight: 300;
-  letter-spacing: 0.1em;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem; font-weight: 700;
+  letter-spacing: 0.06em;
   color: var(--ink); text-decoration: none;
   padding: 1rem 0; border-bottom: 1px solid var(--border);
   transition: color 0.2s;
@@ -198,27 +198,27 @@ nav {
 
 /* ── TYPE SCALE ── */
 .display-xl {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(4.5rem, 11vw, 13rem);
-  font-weight: 300; line-height: 0.92; letter-spacing: -0.01em;
+  font-weight: 800; line-height: 0.92; letter-spacing: -0.02em;
   color: var(--ink);
 }
 .display-lg {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(2.8rem, 6vw, 7rem);
-  font-weight: 300; line-height: 0.95; letter-spacing: 0.01em;
+  font-weight: 700; line-height: 0.95; letter-spacing: -0.01em;
   color: var(--ink);
 }
 .display-md {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(2rem, 4vw, 4.5rem);
-  font-weight: 300; line-height: 1.05;
+  font-weight: 700; line-height: 1.05;
   color: var(--ink);
 }
 .display-sm {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: clamp(1.4rem, 2.5vw, 2.2rem);
-  font-weight: 300; line-height: 1.2;
+  font-weight: 700; line-height: 1.2;
   color: var(--ink);
 }
 
@@ -234,8 +234,8 @@ nav {
 /* ── BUTTONS ── */
 .btn {
   display: inline-block;
-  font-family: 'Jost', sans-serif;
-  font-size: 0.62rem; font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem; font-weight: 700;
   letter-spacing: 0.25em; text-transform: uppercase;
   padding: 0.9rem 2.5rem;
   text-decoration: none;
@@ -275,12 +275,12 @@ footer {
   margin-bottom: 2rem;
 }
 .footer-brand {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem; font-weight: 300; letter-spacing: 0.18em;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2.2rem; font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--ink); margin-bottom: 1rem;
 }
 .footer-tagline { font-size: 0.875rem; font-weight: 300; color: var(--ink3); line-height: 1.8; max-width: 240px; }
-.footer-col-title { font-size: 0.58rem; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.footer-col-title { font-size: 0.58rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
 .footer-links { list-style: none; }
 .footer-links li { margin-bottom: 0.65rem; }
 .footer-links a { font-size: 0.825rem; font-weight: 300; color: var(--ink3); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
