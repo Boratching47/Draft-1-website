@@ -52,12 +52,12 @@
 }
 .hero-meta-item:last-child { border-right: none; }
 .hero-meta-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem; font-weight: 300; color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2rem; font-weight: 700; color: var(--ink);
   display: block; line-height: 1;
 }
 .hero-meta-num span { color: var(--gold); }
-.hero-meta-label { display: none; }
+.hero-meta-label { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink3); margin-top: 0.35rem; display: block; }
 
 /* ── INTRO STRIP ── */
 .intro-strip {
@@ -106,8 +106,8 @@
 .product-card:hover .product-card-line { width: 52px; }
 
 .product-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 5rem; font-weight: 300; line-height: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 5rem; font-weight: 700; line-height: 1;
   color: var(--border);
   position: absolute; top: 1.5rem; right: 2rem;
   pointer-events: none;
@@ -116,8 +116,8 @@
 .product-card:hover .product-num { color: var(--gold-faint); }
 
 .product-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem; font-weight: 400; letter-spacing: 0.06em;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem; font-weight: 700; letter-spacing: 0.03em;
   color: var(--ink); display: block; margin-bottom: 0.75rem;
 }
 .product-desc { font-size: 0.85rem; font-weight: 300; color: var(--ink3); line-height: 1.8; }
