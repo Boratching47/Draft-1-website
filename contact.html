@@ -3,8 +3,20 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>BMBD — Contact</title>
+<title>Book a Strategy Call | BMBD Business Consulting NZ</title>
+<meta name="description" content="Book a no-pressure strategy call with BMBD Consulting. Fill in the form and we'll be in touch within one business day. Flexible business consulting in New Zealand."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://bmbd.co.nz/contact.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bmbd.co.nz/contact.html"/>
+<meta property="og:title" content="Book a Strategy Call | BMBD Business Consulting NZ"/>
+<meta property="og:description" content="Book a no-pressure strategy call with BMBD Consulting. Fill in the form and we'll be in touch within one business day. Flexible business consulting in New Zealand."/>
+<meta property="og:site_name" content="BMBD Consulting"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Book a Strategy Call | BMBD Business Consulting NZ"/>
+<meta name="twitter:description" content="Book a no-pressure strategy call with BMBD Consulting. Fill in the form and we'll be in touch within one business day. Flexible business consulting in New Zealand."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400;1,9..40,700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/global.css"/>
 <link rel="stylesheet" href="css/pages.css"/>
@@ -75,58 +87,60 @@
           </div>
         </div>
         <div class="contact-social">
-          <a href="#" class="social-btn">IG</a>
-          <a href="#" class="social-btn">FB</a>
-          <a href="#" class="social-btn">LI</a>
+          <a href="#" class="social-btn" aria-label="Follow BMBD on Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="Follow BMBD on Facebook">FB</a>
+          <a href="#" class="social-btn" aria-label="Connect with BMBD on LinkedIn">LI</a>
         </div>
       </div>
     </div>
     <!-- RIGHT -->
     <div class="contact-right">
       <span class="eyebrow" style="display:block;margin-bottom:2rem;">Send an Enquiry</span>
+      <form id="contactForm" novalidate>
       <div class="form-2col">
         <div class="field">
-          <label>First Name *</label>
-          <input type="text" placeholder="Sophie" data-required/>
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Sophie" data-required autocomplete="given-name"/>
         </div>
         <div class="field">
-          <label>Last Name</label>
-          <input type="text" placeholder="Armand"/>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Armand" autocomplete="family-name"/>
         </div>
       </div>
       <div class="field">
-        <label>Email Address *</label>
-        <input type="email" placeholder="hello@yourmail.com" data-required/>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" placeholder="hello@yourmail.com" data-required autocomplete="email"/>
       </div>
       <div class="field">
-        <label>Phone Number</label>
-        <input type="tel" placeholder="+64 21 000 0000"/>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+64 21 000 0000" autocomplete="tel"/>
       </div>
       <div class="field">
-        <label>Service of Interest</label>
-        <select>
+        <label for="service">Service of Interest</label>
+        <select id="service" name="service">
           <option value="" disabled selected>Select a service…</option>
-          <option>HR + People Management</option>
-          <option>Operations Optimisation</option>
-          <option>Strategy & Growth Planning</option>
-          <option>Not sure — I need a consultation</option>
+          <option value="hr">HR + People Management</option>
+          <option value="operations">Operations Optimisation</option>
+          <option value="strategy">Strategy & Growth Planning</option>
+          <option value="unsure">Not sure — I need a consultation</option>
         </select>
       </div>
       <div class="field">
-        <label>Preferred Date & Time</label>
-        <input type="text" placeholder="e.g. Thursday afternoons, or any morning"/>
+        <label for="preferredTime">Preferred Date & Time</label>
+        <input type="text" id="preferredTime" name="preferredTime" placeholder="e.g. Thursday afternoons, or any morning"/>
       </div>
       <div class="field">
-        <label>Tell us about your business *</label>
-        <textarea placeholder="Your primary challenges, current team size, goals…" data-required></textarea>
+        <label for="message">Tell us about your business *</label>
+        <textarea id="message" name="message" placeholder="Your primary challenges, current team size, goals…" data-required></textarea>
       </div>
       <div class="form-bottom">
         <span class="form-note">We confirm all bookings within one business day.</span>
-        <button class="btn btn-gold" onclick="handleSubmit()">Send Enquiry →</button>
+        <button type="submit" class="btn btn-gold" onclick="handleSubmit()">Send Enquiry →</button>
       </div>
-      <div class="success-msg" id="formSuccess">
+      <div class="success-msg" id="formSuccess" role="status" aria-live="polite">
         ✦ Thank you — your enquiry has been received. We'll be in touch within one business day to confirm your call.
       </div>
+      </form>
     </div>
   </div>
 </div>
