@@ -40,6 +40,17 @@
 [data-theme="light"] .nav-logo-img { filter:brightness(0) invert(0); }
 .hero-visual-img { width:100%;height:100%;object-fit:cover;object-position:center top;display:block; }
 .ritual-full-img { width:100%;height:100%;object-fit:cover;object-position:center;display:block;min-height:400px; }
+.hero-stats {
+  display:flex; gap:2rem; flex-wrap:wrap; margin-top:3rem;
+  padding-top:2rem; border-top:1px solid var(--border);
+}
+.hero-stat-item { display:flex; flex-direction:column; gap:0.35rem; }
+.hero-stat-num { font-family:'Cormorant Garamond',serif; font-size:2.2rem; font-weight:300; color:var(--gold); line-height:1; }
+.hero-stat-label { font-size:0.7rem; font-weight:400; letter-spacing:0.08em; color:var(--ink3); max-width:160px; line-height:1.5; }
+.intro-label-col-lg { min-width:220px; }
+.diff-list { list-style:none; display:flex; flex-direction:column; gap:1.75rem; margin-bottom:2.5rem; }
+.diff-item-title { font-size:1rem; font-weight:500; color:var(--ink); margin-bottom:0.35rem; display:block; }
+.diff-item-body { font-size:0.925rem; font-weight:300; line-height:1.85; color:var(--ink); }
 </style>
 </head>
 <body>
@@ -48,7 +59,6 @@
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="testimonials.html">Our Clients</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -61,7 +71,6 @@
 <div class="mobile-menu" id="mobileMenu">
   <a href="index.html" onclick="closeMenu()">Home</a>
   <a href="services.html" onclick="closeMenu()">Services</a>
-  <a href="testimonials.html" onclick="closeMenu()">Our Clients</a>
   <a href="about.html" onclick="closeMenu()">About</a>
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </div>
@@ -71,16 +80,29 @@
     <div class="hero-left">
       <div>
         <span class="eyebrow">Business Management Consulting</span>
-        <h1 class="hero-headline">
-          <span class="display-xl">Business</span>
-          <span class="display-xl">management</span>
-          <span class="display-xl italic-line gold">by design.</span>
-        </h1>
-        <p class="body-lg" style="max-width:400px;margin-bottom:3rem;">Flexible support, working with you, anytime.</p>
+        <div class="hero-headline">
+          <span class="display-xl">Your Business.</span>
+          <span class="display-xl italic-line gold">Better Managed.</span>
+        </div>
+        <p class="body-lg" style="max-width:420px;margin-bottom:2rem;">Better People. Better Systems. Better Business.</p>
       </div>
       <div class="hero-btns">
         <a href="services.html" class="btn btn-gold">Explore Services</a>
         <a href="about.html" class="btn btn-outline">Our Approach</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">20+</span>
+          <span class="hero-stat-label">Years of business management, ownership, people leadership and senior operational experience</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">30+</span>
+          <span class="hero-stat-label">Businesses co-founded and built across a range of industries</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="hero-stat-num">60+</span>
+          <span class="hero-stat-label">Business owners led and coordinated in complex operational environments</span>
+        </div>
       </div>
     </div>
     <div class="hero-right">
@@ -92,28 +114,31 @@
         </svg>
         <img src="img-hero.svg" alt="Business consulting" class="hero-visual-img"/>
       </div>
-      <div class="hero-meta">
-        <div class="hero-meta-item">
-          <span class="hero-meta-num"><span data-count="8">0</span><span class="gold">+</span></span>
-          <span class="hero-meta-label">businesses streamlined</span>
-        </div>
-        <div class="hero-meta-item">
-          <span class="hero-meta-num"><span data-count="100">0</span><span class="gold">+</span></span>
-          <span class="hero-meta-label">hours saved per month</span>
-        </div>
-      </div>
     </div>
   </section>
   <!-- INTRO -->
   <section class="intro-strip reveal">
-    <div class="intro-label-col">
+    <div class="intro-label-col intro-label-col-lg">
       <span class="eyebrow">The BMBD Difference</span>
-      <span class="rule-gold"></span>
+      <span class="rule-gold" style="margin-top:1rem;"></span>
+      <p class="body-md" style="margin-top:1.25rem;color:var(--ink3);">What we do differently</p>
     </div>
     <div class="intro-text-col">
-      <h2 class="display-sm italic" style="margin-bottom:1.5rem;">Practical business support, built around you.</h2>
-      <p class="body-lg" style="margin-bottom:1.5rem;">We don't believe in one-size-fits-all solutions. Every client receives hands-on, flexible support tailored to their unique business, team, and goals.</p>
-      <p class="body-md" style="margin-bottom:2.5rem;">No contracts, no rigid systems — just practical, adaptable solutions to streamline and grow your business.</p>
+      <h2 class="display-sm" style="margin-bottom:2rem;color:var(--ink);">What we do differently</h2>
+      <ul class="diff-list">
+        <li>
+          <span class="diff-item-title">People First</span>
+          <span class="diff-item-body">Businesses perform best when their people are supported, clear about what is expected and empowered to do their jobs well.</span>
+        </li>
+        <li>
+          <span class="diff-item-title">Practical Solutions</span>
+          <span class="diff-item-body">Business advice needs to work in the real world. We focus on solutions that can actually be implemented.</span>
+        </li>
+        <li>
+          <span class="diff-item-title">Accountability</span>
+          <span class="diff-item-body">We take ownership, follow through and do what we say we are going to do.</span>
+        </li>
+      </ul>
       <a href="about.html" class="btn btn-outline">Our Story →</a>
     </div>
   </section>
@@ -130,25 +155,39 @@
       <a href="services.html" class="product-card reveal">
         <div class="product-card-line"></div>
         <span class="product-num">01</span>
-        <span class="product-name">HR + People Management</span>
-        <p class="product-desc">Improving team performance, communication, and accountability through better structure, leadership support, and processes.</p>
+        <span class="product-name">Fractional Business Management</span>
+        <p class="product-desc">Senior-level, embedded business management support for owners and leadership teams without the cost of a full-time hire.</p>
         <span class="product-arrow">Discover →</span>
       </a>
       <a href="services.html" class="product-card reveal" style="transition-delay:0.08s;">
         <div class="product-card-line"></div>
         <span class="product-num">02</span>
-        <span class="product-name">Operations Optimisation</span>
-        <p class="product-desc">Streamlining workflows, systems, and day-to-day processes to save time, reduce costs, and increase efficiency.</p>
+        <span class="product-name">People, Culture & Leadership</span>
+        <p class="product-desc">Practical HR and people leadership across recruitment, employee relations, performance and culture.</p>
         <span class="product-arrow">Discover →</span>
       </a>
       <a href="services.html" class="product-card reveal" style="transition-delay:0.16s;">
         <div class="product-card-line"></div>
         <span class="product-num">03</span>
-        <span class="product-name">Strategy & Growth Planning</span>
-        <p class="product-desc">Identifying opportunities, setting clear goals, and building practical plans to scale the business sustainably.</p>
+        <span class="product-name">Business Advisory & Growth Foundations</span>
+        <p class="product-desc">Assessing performance gaps and risk, then building the people, systems and reporting needed for sustainable growth.</p>
         <span class="product-arrow">Discover →</span>
       </a>
-      <a href="contact.html" class="product-card reveal" style="transition-delay:0.24s;background:var(--bg3);border:1px solid var(--border2);">
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.24s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">04</span>
+        <span class="product-name">Operations & Systems Improvement</span>
+        <p class="product-desc">Improving workflows, responsibilities, reporting and structure to make the business more efficient, consistent and scalable.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="services.html" class="product-card reveal" style="transition-delay:0.32s;">
+        <div class="product-card-line"></div>
+        <span class="product-num">05</span>
+        <span class="product-name">Financial & Commercial Management</span>
+        <p class="product-desc">Budgeting, cashflow, reporting, payroll and all the commercial groundwork that keeps the business running.</p>
+        <span class="product-arrow">Discover →</span>
+      </a>
+      <a href="contact.html" class="product-card reveal" style="transition-delay:0.40s;background:var(--bg3);border:1px solid var(--border2);">
         <div class="product-card-line" style="background:var(--gold2);"></div>
         <span class="product-num" style="color:var(--gold-faint);">✦</span>
         <span class="product-name" style="color:var(--gold);">Book a Strategy Call</span>
@@ -182,7 +221,6 @@
       <ul class="footer-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="testimonials.html">Our Clients</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -190,9 +228,12 @@
     <div>
       <div class="footer-col-title">Services</div>
       <ul class="footer-links">
-        <li><a href="services.html">HR + People Management</a></li>
-        <li><a href="services.html">Operations Optimisation</a></li>
-        <li><a href="services.html">Strategy & Growth Planning</a></li>
+        <li><a href="services.html">Fractional Business Management</a></li>
+        <li><a href="services.html">People, Culture & Leadership</a></li>
+        <li><a href="services.html">Business Advisory & Growth</a></li>
+        <li><a href="services.html">Operations & Systems</a></li>
+        <li><a href="services.html">Financial & Commercial</a></li>
+        <li><a href="services.html">Change & Project Delivery</a></li>
       </ul>
     </div>
     <div>
