@@ -2,18 +2,8 @@
 (function () {
   'use strict';
 
-  /* ── THEME (persisted) ── */
-  const html = document.documentElement;
-  const saved = localStorage.getItem('lumis-theme') || 'dark';
-  html.setAttribute('data-theme', saved);
-
-  document.querySelectorAll('.theme-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      html.setAttribute('data-theme', next);
-      localStorage.setItem('lumis-theme', next);
-    });
-  });
+  /* ── THEME (dark mode only) ── */
+  document.documentElement.setAttribute('data-theme', 'dark');
 
   /* ── ACTIVE NAV ── */
   const page = location.pathname.split('/').pop() || 'index.html';
