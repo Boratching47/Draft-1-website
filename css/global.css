@@ -3,21 +3,23 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* DARK (default) */
-  --bg:           #0C0B09;
-  --bg2:          #111009;
-  --bg3:          #181610;
-  --surface:      #1E1C14;
-  --ink:          #F0EAD8;
-  --ink2:         #C8BFA4;
-  --ink3:         #7A7262;
-  --ink4:         #3A3628;
-  --gold:         #FFBD59;
-  --gold2:        #FFD07A;
-  --gold-faint:   rgba(255,189,89,0.08);
-  --border:       rgba(255,189,89,0.12);
-  --border2:      rgba(255,189,89,0.22);
-  --white:        #F0EAD8;
+  /* DARK (default) — coral / blue / black / white */
+  --bg:           #111111;
+  --bg2:          #1A1A1A;
+  --bg3:          #222222;
+  --surface:      #2A2A2A;
+  --ink:          #FFFFFF;
+  --ink2:         #E0E0E0;
+  --ink3:         #999999;
+  --ink4:         #555555;
+  --gold:         #E8553E;
+  --gold2:        #FF7055;
+  --gold-faint:   rgba(232,85,62,0.10);
+  --border:       rgba(232,85,62,0.18);
+  --border2:      rgba(232,85,62,0.35);
+  --blue:         #2C5EE8;
+  --blue2:        #5580FF;
+  --white:        #FFFFFF;
   --nav-h:        100px;
   --ease:         cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -51,7 +53,7 @@ nav {
   height: var(--nav-h);
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 5vw;
-  background: rgba(12,11,9,0.88);
+  background: rgba(17,17,17,0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
@@ -155,7 +157,7 @@ nav {
 /* ── TYPE SCALE ── */
 .display-xl {
   font-family: 'DM Sans', sans-serif;
-  font-size: clamp(4.5rem, 11vw, 13rem);
+  font-size: clamp(2.8rem, 6vw, 7rem);
   font-weight: 800; line-height: 0.92; letter-spacing: -0.02em;
   color: var(--ink);
 }
