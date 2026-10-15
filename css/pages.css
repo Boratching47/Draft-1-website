@@ -134,7 +134,7 @@
 }
 .service-row:hover {
   background: var(--bg3);
-  box-shadow: 0 4px 24px rgba(255,189,89,0.08);
+  box-shadow: 0 4px 24px rgba(44,94,232,0.10);
 }
 
 .service-num {
@@ -363,8 +363,8 @@
 .success-msg {
   display: none; margin-top: 1rem;
   padding: 1rem 1.25rem;
-  border: 1px solid rgba(255,189,89,0.3);
-  background: rgba(255,189,89,0.05);
+  border: 1px solid rgba(44,94,232,0.35);
+  background: rgba(44,94,232,0.05);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.95rem; font-style: italic; color: var(--gold);
 }
