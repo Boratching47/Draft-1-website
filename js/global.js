@@ -3,7 +3,7 @@
   'use strict';
 
   /* ── THEME (dark mode only) ── */
-  document.documentElement.setAttribute('data-theme', 'dark');
+  document.documentElement.setAttribute('data-theme', 'light');
 
   /* ── ACTIVE NAV ── */
   const page = location.pathname.split('/').pop() || 'index.html';
