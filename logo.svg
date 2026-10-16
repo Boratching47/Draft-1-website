@@ -1,4 +1,7 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue rounded square background -->
+  <rect x="0" y="0" width="200" height="200" rx="36" ry="36" fill="#2C5EE8"/>
+
   <!-- Top-left: B -->
   <text x="4" y="94"
         font-family="'Arial Black', 'Arial', sans-serif"
@@ -7,16 +10,13 @@
         fill="white">B</text>
 
   <!-- Top-right: ascending bar chart (represents M) + arrow -->
-  <!-- 4 bars, baseline y=94, within x=103–198 -->
   <rect x="103" y="59" width="19" height="35" fill="white"/>
   <rect x="125" y="44" width="19" height="50" fill="white"/>
   <rect x="147" y="29" width="19" height="65" fill="white"/>
   <rect x="169" y="14" width="19" height="80" fill="white"/>
-  <!-- Arrow: diagonal line up-right from top of last bar -->
+  <!-- Arrow -->
   <line x1="178" y1="14" x2="196" y2="3"  stroke="white" stroke-width="9" stroke-linecap="square"/>
-  <!-- Arrowhead: horizontal back from tip -->
   <line x1="186" y1="3"  x2="196" y2="3"  stroke="white" stroke-width="9" stroke-linecap="square"/>
-  <!-- Arrowhead: vertical down from tip -->
   <line x1="196" y1="3"  x2="196" y2="13" stroke="white" stroke-width="9" stroke-linecap="square"/>
 
   <!-- Bottom-left: B -->
