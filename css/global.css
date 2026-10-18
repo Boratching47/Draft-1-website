@@ -3,20 +3,20 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* DARK (default) — coral / blue / black / white */
-  --bg:           #111111;
-  --bg2:          #1A1A1A;
-  --bg3:          #222222;
-  --surface:      #2A2A2A;
-  --ink:          #FFFFFF;
-  --ink2:         #E0E0E0;
-  --ink3:         #999999;
-  --ink4:         #555555;
-  --gold:         #2C5EE8;
-  --gold2:        #5580FF;
-  --gold-faint:   rgba(44,94,232,0.10);
-  --border:       rgba(44,94,232,0.18);
-  --border2:      rgba(44,94,232,0.35);
+  /* LIGHT — white / blue / black */
+  --bg:           #FFFFFF;
+  --bg2:          #F5F7FF;
+  --bg3:          #EBF0FF;
+  --surface:      #FFFFFF;
+  --ink:          #111111;
+  --ink2:         #333333;
+  --ink3:         #666666;
+  --ink4:         #AAAAAA;
+  --gold:         #0057FF;
+  --gold2:        #3378FF;
+  --gold-faint:   rgba(0,87,255,0.08);
+  --border:       rgba(0,0,0,0.08);
+  --border2:      rgba(0,87,255,0.25);
   --coral:        #FF6B6B;
   --coral2:       #FF8E8E;
   --white:        #FFFFFF;
@@ -53,7 +53,7 @@ nav {
   height: var(--nav-h);
   display: flex; align-items: center; justify-content: space-between;
   padding: 0 5vw;
-  background: rgba(17,17,17,0.92);
+  background: rgba(255,255,255,0.96);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--border);
